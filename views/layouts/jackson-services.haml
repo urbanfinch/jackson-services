@@ -1,0 +1,138 @@
+!!!5
+%html
+  %head
+    %meta{:"http-equiv" => "Content-Type", :content => "text/html;charset=utf-8"}
+    %meta{:name => 'description', :content => 'Guaranteed Quality & Service Since 1924'}
+    %link{:rel => 'icon', :type => 'image/vnd.microsoft.icon', :href => '/favicon.ico'}
+    %link{:rel => 'shortcut icon', :type => 'image/vnd.microsoft.icon', :href => '/favicon.ico'}
+    %link{:rel => 'stylesheet', :href => '/stylesheets/jackson-services.css', :media => 'screen, projection', :type => 'text/css'}
+    /[if lte IE 6]
+      %link{:rel=>'stylesheet', :href=>'http://universal-ie6-css.googlecode.com/files/ie6.1.1.css', :title => 'URBAN FINCH', :media => 'screen, projection', :type => 'text/css'}
+    /[if lt IE 9]
+      %script{:type => 'text/javascript', :src => 'http://html5shiv.googlecode.com/svn/trunk/html5.js'}
+    :javascript
+    
+      /* Initiate the application javascript and run */
+      $(document).ready(function(){
+      
+        jackson_services.run();
+      
+      });
+    :javascript
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-9687987-15']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    %title Jackson Services
+  %body
+    .outer-container
+      .inner-container
+        %header
+          %a{:id => 'logo', :href => '/', :title => 'Jackson Services'}
+            %img{:src => '/images/logo.png', :alt => 'Jackson Services'}
+          %nav
+            %ul
+              %li
+                %a{:href => '/home', :title => 'Home'} Home
+                %ul
+                  %li
+                    %a{:href => '/home/welcome', :title => 'Welcome'} Welcome
+                  %li
+                    %a{:href => '/home/history', :title => 'History'} History
+                  %li
+                    %a{:href => '/home/whyjackson', :title => 'Why Jackson?'} Why Jackson?
+              %li
+                %a{:href => '/about', :title => 'About Us'} About Us
+                %ul
+                  %li
+                    %a{:href => '/about/quality', :title => 'Quality'} Quality
+                  %li
+                    %a{:href => '/about/community', :title => 'Community'} Community
+                  %li
+                    %a{:href => '/about/excellence', :title => 'Excellence'} Excellence
+              %li
+                %a{:href => '/minnietrack', :title => 'Minnie Track'} Minnie Track
+              %li
+                %a{:href => '/services', :title => 'JacksonServices'}
+                  %span{:class => 'jackson'} Jackson
+                  %span{:class => 'services'} Services
+                %ul
+                  %li
+                    %a{:href => '/services/minnietrackscanning', :title => 'Minnie Track Scanning'} Minnie Track Scanning
+                  %li
+                    %a{:href => '/services/garmentinspection', :title => 'Garment Inspection'} Garment Inspection
+                  %li
+                    %a{:href => '/services/garmentrepair', :title => 'Garment Repair'} Garment Repair
+              %li
+                %a{:href => '/products', :title => 'Products'} Products
+                %ul
+                  %li
+                    %a{:href => '/products/restroomsupplies', :title => 'Restroom Supplies'} Restroom Supplies&nbsp;&nbsp;>
+                    %ul
+                      %li
+                        %a{:href => '/products/restroomsupplies/paper', :title => 'Paper'} Paper
+                      %li
+                        %a{:href => '/products/restroomsupplies/soap', :title => 'Soap'} Soap
+                  %li
+                    %a{:href => '/products/uniforms', :title => 'Uniforms'} Uniforms&nbsp;&nbsp;>
+                    %ul
+                      %li
+                        %a{:href => '/products/uniforms/workwear', :title => 'Workwear'} Workwear&nbsp;&nbsp;>
+                        %ul
+                          %li
+                            %a{:href => '/products/uniforms/workwear/shirts', :title => 'Shirts'} Shirts
+                          %li
+                            %a{:href => '/products/uniforms/workwear/pants', :title => 'Pants'} Pants
+                          %li
+                            %a{:href => '/products/uniforms/workwear/coveralls', :title => 'Coveralls'} Coveralls
+                          %li
+                            %a{:href => '/products/uniforms/workwear/jackets', :title => 'Jackets'} Jackets
+                      %li
+                        %a{:href => '/products/uniforms/safety', :title => 'Safety'} Safety
+                      %li
+                        %a{:href => '/products/uniforms/automotive', :title => 'Automotive'} Automotive
+                      %li
+                        %a{:href => '/products/uniforms/food', :title => 'Food'} Food
+                      %li
+                        %a{:href => '/products/uniforms/executive', :title => 'Executive'} Executive
+                      %li
+                        %a{:href => '/products/uniforms/healthcare', :title => 'Healthcare'} Healthcare
+                      %li
+                        %a{:href => '/products/uniforms/kitchen', :title => 'Kitchen'} Kitchen
+                      %li
+                        %a{:href => '/products/uniforms/directpurchase', :title => 'Direct Purchase'} Direct Purchase
+              %li
+                %a{:href => '/vendors', :title => 'Vendors'} Vendors
+              %li
+                %a{:href => '/testimonials', :title => 'Testimonials'} Testimonials
+              %li
+                %a{:href => '/contact', :title => 'Contact Us'} Contact Us
+        %section
+          = yield
+        %footer
+          %nav
+            %ul
+              %li
+                %a{:href => '/home', :title => 'Home'} Home
+              %li
+                %a{:href => '/about', :title => 'About Us'} About Us
+              %li
+                %a{:href => '/minnietrack', :title => 'Minnie Track'} Minnie Track
+              %li  
+                %a{:href => '/services', :title => 'JacksonServices'} JacksonServices
+              %li
+                %a{:href => '/products', :title => 'Products'} Products
+              %li
+                %a{:href => '/vendors', :title => 'Vendors'} Vendors
+              %li  
+                %a{:href => '/testimonials', :title => 'Testimonials'} Testimonials
+              %li  
+                %a{:href => '/contact', :title => 'Contact Us'} Contact Us
+      %footer
+        %p Jackson Services,&nbsp;Inc.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;981&nbsp;33rd&nbsp;Ave.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Columbus,&nbsp;Ne&nbsp;68601&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Toll&nbsp;Free:&nbsp;&nbsp;800.642.2824&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phone:&nbsp;&nbsp;402.564.2824&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fax:&nbsp;&nbsp;402.564.5443
+    

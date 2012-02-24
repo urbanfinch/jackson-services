@@ -28,6 +28,14 @@ class JacksonServices < Sinatra::Base
     haml "#{params[:section]}/#{params[:page]}/#{params[:subpage]}/#{params[:division]}/#{params[:division]}".to_sym
   end
   
+  post '/contact_us/contact' do
+    redirect '/contact_us'
+  end
+  
+  post '/contact_us/request_service' do
+    redirect '/contact_us'
+  end
+  
   get '/*' do
     redirect '/'
   end

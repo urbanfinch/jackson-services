@@ -1,1 +1,165 @@
-%h1 Contact Us
+%div{:id => 'contact_us'}
+  %div{:id => 'contact_us_left'}
+    %h1 Contact Us
+    %nav{:id => 'contact_us_form_nav'}
+      %a{:id => 'contact_us_form_nav_contact', :href => '#contact', :class => 'selected'} Contact Us
+      %a{:id => 'contact_us_form_nav_request_service', :href => '#request_service'} Request Service
+    %div{:id => 'contact_us_left_contact'}
+      %p
+        If you feel something in your rental program needs attention, 
+        complete this form to prompt action.
+      %form{:id => 'contact', :action => '/contact_us/contact', :method => 'post'}
+        %div
+          %input{:id => 'date', :type => 'text', :name => 'date', :placeholder => 'Date:'}
+        %div
+          %input{:id => 'name', :type => 'text', :name => 'name', :placeholder => 'Name:'}
+        %div
+          %input{:id => 'business', :type => 'text', :name => 'business', :placeholder => 'Business:'}
+        %div
+          %input{:id => 'address', :type => 'text', :name => 'address', :placeholder => 'Address:'}
+        %div
+          %input{:id => 'city_state_zip', :type => 'text', :name => 'city_state_zip', :placeholder => 'City, State, Zip:'}
+        %div
+          %input{:id => 'phone', :type => 'text', :name => 'phone', :placeholder => 'Phone:'}
+        %div
+          %input{:id => 'email', :type => 'text', :name => 'email', :placeholder => 'Email:'}
+        %div
+          %h2 Request For Action:
+          %div
+            %input{:id => 'worn', :type => 'checkbox', :name => 'worn'} 
+            %span Some of my garments are worn.
+          %div
+            %input{:id => 'missing', :type => 'checkbox', :name => 'missing'} 
+            %span Some of my garments are missing.
+          %div
+            %input{:id => 'more_inventory', :type => 'checkbox', :name => 'more_inventory'} 
+            %span I need more inventory.
+          %div
+            %input{:id => 'less_inventory', :type => 'checkbox', :name => 'less_inventory'} 
+            %span I need less inventory.
+          %div
+            %input{:id => 'other', :type => 'checkbox', :name => 'other'} 
+            %span Other (comment below)
+          %div
+            %input{:id => 'see_me', :type => 'checkbox', :name => 'see_me'} 
+            %span Please see me.
+        %div
+          %textarea{:id => 'comments', :name => 'comments', :placeholder => 'Comments:', :cols => 51, :rows => 20}
+        %ul
+          %li
+            %input{:id => 'reset', :type => 'reset', :name => 'reset', :value => 'RESET'}
+          %li
+            %input{:id => 'submit', :type => 'submit', :name => 'submit', :value => 'SUBMIT'}
+        .clear
+    %div{:id => 'contact_us_left_request_service'}
+      %p
+        If you are looking for textile 
+        rental service, use our request for services form.
+      %form{:id => 'request_service', :action => '/contact_us/request_service', :method => 'post'}
+        %div
+          %input{:id => 'date', :type => 'text', :name => 'date', :placeholder => 'Date:'}
+        %div
+          %input{:id => 'name', :type => 'text', :name => 'name', :placeholder => 'Name:'}
+        %div
+          %input{:id => 'business', :type => 'text', :name => 'business', :placeholder => 'Business:'}
+        %div
+          %input{:id => 'address', :type => 'text', :name => 'address', :placeholder => 'Address:'}
+        %div
+          %input{:id => 'city_state_zip', :type => 'text', :name => 'city_state_zip', :placeholder => 'City, State, Zip:'}
+        %div
+          %input{:id => 'phone', :type => 'text', :name => 'phone', :placeholder => 'Phone:'}
+        %div
+          %input{:id => 'email', :type => 'text', :name => 'email', :placeholder => 'Email:'}
+        %div
+          %h2 Do You Use:
+          %div
+            %input{:id => 'garments', :type => 'checkbox', :name => 'garments'} 
+            %span Garments
+          %div
+            %input{:id => 'entrance_rugs', :type => 'checkbox', :name => 'entrance_rugs'} 
+            %span Entrance Rugs
+          %div
+            %input{:id => 'dust_mops', :type => 'checkbox', :name => 'dust_mops'} 
+            %span Dust Mops
+          %div
+            %input{:id => 'towels', :type => 'checkbox', :name => 'towels'} 
+            %span Towels
+          %div
+            %input{:id => 'linens', :type => 'checkbox', :name => 'linens'} 
+            %span Linens
+          %div
+            %input{:id => 'other', :type => 'checkbox', :name => 'other'} 
+            %span Other
+        %div
+          %input{:id => 'who_is_current_supplier', :type => 'text', :name => 'who_is_current_supplier', :placeholder => 'Who is your current supplier:'}
+        %div
+          %input{:id => 'when_does_contract_expire', :type => 'text', :name => 'when_does_contract_expire', :placeholder => 'When does your contract expire:'}
+        %div
+          %textarea{:id => 'improvements', :name => 'improvements', :placeholder => 'Are there any improvements you would like in your rental aggreement:', :cols => 51, :rows => 5}
+        %div
+          %textarea{:id => 'primary', :name => 'primary', :placeholder => 'What is your company’s primarty product/service:', :cols => 51, :rows => 5}
+        %div
+          %textarea{:id => 'comments', :name => 'comments', :placeholder => 'Comments:', :cols => 51, :rows => 5}
+        %ul
+          %li
+            %input{:id => 'reset', :type => 'reset', :name => 'reset', :value => 'RESET'}
+          %li
+            %input{:id => 'submit', :type => 'submit', :name => 'submit', :value => 'SUBMIT'}
+        .clear
+  %div{:id => 'contact_us_right'}
+    %img{:id => 'map', :src => '/images/contact_us/map.png'}
+    %h1 Management
+    %div{:id => 'contact_us_right_management_left'}
+      %h2 CEO
+      %h3 Jay J. Jackson
+      %a{:href => 'mailto:jayjack@jackson-services.com'} jayjack@jackson-services.com
+      %h2 President
+      %h3 Jesse J. Jackson
+      %a{:href => 'mailto:jackson@jackson-services.com'} jackson@jackson-services.com
+      %h2 Vice President
+      %h3 Nikki J. Jackson
+      %a{:href => 'mailto:nikkil@jackson-services.com'} nikkil@jackson-services.com
+      %h2 Vice President
+      %h3 Jason J. Jackon
+      %a{:href => 'mailto:jasjack@jackson-services.com'} jasjack@jackson-services.com
+      %h2 Service Manager
+      %h3 Dan Korger
+      %a{:href => 'mailto:dkorger@jackson-services.com'} dkorger@jackson-services.com
+      %h2 Key Account Manager
+      %h3 Paul Greenlee
+      %a{:href => 'mailto:prgreen@jackson-services.com'} prgreen@jackson-services.com
+      %p 402.276.0961
+    %div{:id => 'contact_us_right_management_right'}
+      %h2 Route Manager
+      %h3 Kurt Hall
+      %a{:href => 'mailto:khall@jackson-services.com'} khall@jackson-services.com
+      %h2 Route Manager
+      %h3 Greg Romshek
+      %a{:href => 'mailto:grom@jackson-services.com'} grom@jackson-services.com
+      %h2 Sales
+      %h3 Steve Venditte-Omaha
+      %a{:href => 'mailto:stevev@jackson-services.com'} stevev@jackson-services.com
+      %p 402.660.2846
+      %h2 Sales
+      %p Lincoln
+      %a{:href => 'mailto:jasjack@jackson-services.com'} jasjack@jackson-services.com
+      %p 402.690.3747
+      %h2 Sales
+      %h3 Dennis Cloeter
+      %a{:href => 'mailto:dennisc@jackson-services.com'} dennisc@jackson-services.com
+      %p 402.276.2917
+      %h2 Office
+      %h3 Barbara Duffy
+      %a{:href => 'mailto:bduffy@jackson-services.com'} bduffy@jackson-services.com
+    .clear
+    %h1{:class => 'left'} Office Phone
+    %p
+      Columbus: 402.564.2824
+      %br
+      Lincoln: 402.477.7742
+      %br
+      Omaha: 402.384.2824
+      %br
+      Grand Island: 308.381.8036
+      %br
+  .clear

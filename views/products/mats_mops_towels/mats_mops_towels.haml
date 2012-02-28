@@ -1,1 +1,16 @@
-%h1 Mats, Mops and Towels
+%div{:id => 'products_mats_mops_towels'}
+  %h1 Mats, Mops & Towels
+  %p Please click on a product for further details.
+  %div{:id => 'products_mats_mops_towels_bottom'}
+    %div{:id => 'products_mats_mops_towels_bottom_left'}
+      %h2 Mats
+      %a{:href => '/products/mats_mops_towels/mats', :title => 'Mats'}
+        %img{:src => '/images/products/mats_mops_towels/mats_thumb.png', :alt => 'Mats'}
+      %h2 Mops
+      %a{:href => '/products/mats_mops_towels/mops', :title => 'Mops'}
+        %img{:src => '/images/products/mats_mops_towels/mops_thumb.png', :alt => 'Mops'}
+    %div{:id => 'products_mats_mops_towels_bottom_right'}
+      %h2 Towels
+      %a{:href => '/products/mats_mops_towels/towels', :title => 'Towels'}
+        %img{:src => '/images/products/mats_mops_towels/towels_thumb.png', :alt => 'Towels'}
+  .clear

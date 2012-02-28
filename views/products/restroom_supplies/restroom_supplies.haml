@@ -1,1 +1,40 @@
-%h1 Restroom Supplies
+%div{:id => 'products_restroom_supplies'}
+  %h1 Restroom Supplies
+  %p Please click on a product for further details.
+  %div{:id => 'products_restroom_supplies_bottom'}
+    %div{:id => 'products_restroom_supplies_bottom_left'}
+      %h2 Paper
+      %a{:href => '/products/restroom_supplies/paper', :title => 'Paper'}
+        %img{:src => '/images/products/restroom_supplies/paper_thumb.png', :alt => 'Paper'}
+    %div{:id => 'products_restroom_supplies_bottom_right'}
+      %h2 Soap / Hand Sanitizer
+      %a{:href => '/products/restroom_supplies/soap', :title => 'Soap'}
+        %img{:src => '/images/products/restroom_supplies/soap_thumb.png', :alt => 'Soap'}
+  .clear
+  %div{:id => 'products_restroom_supplies_row'}
+    %h2 Air Fresheners
+    %div{:id => 'products_restroom_supplies_row_container'}
+      %div{:id => 'products_restroom_supplies_row_container_left'}
+        %img{:src => '/images/products/restroom_supplies/air_fresheners_thumb.png', :alt => 'Air Fresheners'}
+      %div{:id => 'products_restroom_supplies_row_container_right'}
+        %p 
+          The
+          %span{:class => 'blue'} TCell
+          ™ odor control system by Technical Concepts dispenses a consistent level of 
+          fragrance over 60 days. Conventional gel systems lose their fragrance intensity over the life 
+          of the refill, but TCell remains constant. Refills contain Microtrans,® a true odor neutralizer.
+        %p
+          How the TCell works: The fuel cell creates hydrogen with the fragrance chamber.  As each 
+          molecule of hydrogen is created it forces (pushes) an equal volume of fragrance out of the 
+          chamber. Natural air flow in the washroom distributes the fragrance throughout the room.
+  .clear
+  %div{:id => 'products_restroom_supplies_row'}
+    %h2 Continuous Roll Towels
+    %div{:id => 'products_restroom_supplies_row_container'}
+      %div{:id => 'products_restroom_supplies_row_container_left'}
+        %img{:src => '/images/products/restroom_supplies/continuous_roll_thumb.png', :alt => 'Continuous Roll Towels'}
+      %div{:id => 'products_restroom_supplies_row_container_right'}
+        %p 
+          %span{:class => 'blue'} Cabinet hand towel.  
+          No more waste.  Comes in both blue and white options.
+  .clear

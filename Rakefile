@@ -11,3 +11,10 @@ namespace :compass do
     sh("bundle exec compass compile --sass-dir #{Dir.pwd}/stylesheets --css-dir #{Dir.pwd}/public/stylesheets -s compressed")
   end
 end
+
+namespace :jackson_services do
+  desc "Start the Cashier console"
+  task :console do
+    sh("irb -r #{Dir.pwd}/bootstrap.rb")
+  end
+end

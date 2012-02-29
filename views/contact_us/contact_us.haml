@@ -10,46 +10,46 @@
         complete this form to prompt action.
       %form{:id => 'contact', :action => '/contact_us/contact', :method => 'post'}
         %div
-          %input{:id => 'date', :type => 'text', :name => 'date', :placeholder => 'Date:'}
+          %input{:id => 'date', :type => 'text', :name => 'contact[date]', :placeholder => 'Date:'}
         %div
-          %input{:id => 'name', :type => 'text', :name => 'name', :placeholder => 'Name:'}
+          %input{:id => 'name', :type => 'text', :name => 'contact[name]', :placeholder => 'Name:'}
         %div
-          %input{:id => 'business', :type => 'text', :name => 'business', :placeholder => 'Business:'}
+          %input{:id => 'business', :type => 'text', :name => 'contact[business]', :placeholder => 'Business:'}
         %div
-          %input{:id => 'address', :type => 'text', :name => 'address', :placeholder => 'Address:'}
+          %input{:id => 'address', :type => 'text', :name => 'contact[address]', :placeholder => 'Address:'}
         %div
-          %input{:id => 'city_state_zip', :type => 'text', :name => 'city_state_zip', :placeholder => 'City, State, Zip:'}
+          %input{:id => 'city_state_zip', :type => 'text', :name => 'contact[city_state_zip]', :placeholder => 'City, State, Zip:'}
         %div
-          %input{:id => 'phone', :type => 'text', :name => 'phone', :placeholder => 'Phone:'}
+          %input{:id => 'phone', :type => 'text', :name => 'contact[phone]', :placeholder => 'Phone:'}
         %div
-          %input{:id => 'email', :type => 'text', :name => 'email', :placeholder => 'Email:'}
+          %input{:id => 'email', :type => 'text', :name => 'contact[email]', :placeholder => 'Email:'}
         %div
           %h2 Request For Action:
           %div
-            %input{:id => 'worn', :type => 'checkbox', :name => 'worn'} 
+            %input{:id => 'worn', :type => 'checkbox', :name => 'contact[worn]'} 
             %span Some of my garments are worn.
           %div
-            %input{:id => 'missing', :type => 'checkbox', :name => 'missing'} 
+            %input{:id => 'missing', :type => 'checkbox', :name => 'contact[missing]'} 
             %span Some of my garments are missing.
           %div
-            %input{:id => 'more_inventory', :type => 'checkbox', :name => 'more_inventory'} 
+            %input{:id => 'more_inventory', :type => 'checkbox', :name => 'contact[more_inventory]'} 
             %span I need more inventory.
           %div
-            %input{:id => 'less_inventory', :type => 'checkbox', :name => 'less_inventory'} 
+            %input{:id => 'less_inventory', :type => 'checkbox', :name => 'contact[less_inventory]'} 
             %span I need less inventory.
           %div
-            %input{:id => 'other', :type => 'checkbox', :name => 'other'} 
+            %input{:id => 'other', :type => 'checkbox', :name => 'contact[other]'} 
             %span Other (comment below)
           %div
-            %input{:id => 'see_me', :type => 'checkbox', :name => 'see_me'} 
+            %input{:id => 'see_me', :type => 'checkbox', :name => 'contact[see_me]'} 
             %span Please see me.
         %div
-          %textarea{:id => 'comments', :name => 'comments', :placeholder => 'Comments:', :cols => 51, :rows => 20}
+          %textarea{:id => 'comments', :name => 'contact[comments]', :placeholder => 'Comments:', :cols => 51, :rows => 20}
         %ul
           %li
-            %input{:id => 'reset', :type => 'reset', :name => 'reset', :value => 'RESET'}
+            %input{:id => 'reset', :type => 'reset', :name => 'contact[reset]', :value => 'RESET'}
           %li
-            %input{:id => 'submit', :type => 'submit', :name => 'submit', :value => 'SUBMIT'}
+            %input{:id => 'submit', :type => 'submit', :name => 'contact[submit]', :value => 'SUBMIT'}
         .clear
     %div{:id => 'contact_us_left_request_service'}
       %p
@@ -57,54 +57,54 @@
         rental service, use our request for services form.
       %form{:id => 'request_service', :action => '/contact_us/request_service', :method => 'post'}
         %div
-          %input{:id => 'date', :type => 'text', :name => 'date', :placeholder => 'Date:'}
+          %input{:id => 'date', :type => 'text', :name => 'request_service[date]', :placeholder => 'Date:'}
         %div
-          %input{:id => 'name', :type => 'text', :name => 'name', :placeholder => 'Name:'}
+          %input{:id => 'name', :type => 'text', :name => 'request_service[name]', :placeholder => 'Name:'}
         %div
-          %input{:id => 'business', :type => 'text', :name => 'business', :placeholder => 'Business:'}
+          %input{:id => 'business', :type => 'text', :name => 'request_service[business]', :placeholder => 'Business:'}
         %div
-          %input{:id => 'address', :type => 'text', :name => 'address', :placeholder => 'Address:'}
+          %input{:id => 'address', :type => 'text', :name => 'request_service[address]', :placeholder => 'Address:'}
         %div
-          %input{:id => 'city_state_zip', :type => 'text', :name => 'city_state_zip', :placeholder => 'City, State, Zip:'}
+          %input{:id => 'city_state_zip', :type => 'text', :name => 'request_service[city_state_zip]', :placeholder => 'City, State, Zip:'}
         %div
-          %input{:id => 'phone', :type => 'text', :name => 'phone', :placeholder => 'Phone:'}
+          %input{:id => 'phone', :type => 'text', :name => 'request_service[phone]', :placeholder => 'Phone:'}
         %div
-          %input{:id => 'email', :type => 'text', :name => 'email', :placeholder => 'Email:'}
+          %input{:id => 'email', :type => 'text', :name => 'request_service[email]', :placeholder => 'Email:'}
         %div
           %h2 Do You Use:
           %div
-            %input{:id => 'garments', :type => 'checkbox', :name => 'garments'} 
+            %input{:id => 'garments', :type => 'checkbox', :name => 'request_service[garments]'} 
             %span Garments
           %div
-            %input{:id => 'entrance_rugs', :type => 'checkbox', :name => 'entrance_rugs'} 
+            %input{:id => 'entrance_rugs', :type => 'checkbox', :name => 'request_service[entrance_rugs]'} 
             %span Entrance Rugs
           %div
-            %input{:id => 'dust_mops', :type => 'checkbox', :name => 'dust_mops'} 
+            %input{:id => 'dust_mops', :type => 'checkbox', :name => 'request_service[dust_mops]'} 
             %span Dust Mops
           %div
-            %input{:id => 'towels', :type => 'checkbox', :name => 'towels'} 
+            %input{:id => 'towels', :type => 'checkbox', :name => 'request_service[towels]'} 
             %span Towels
           %div
-            %input{:id => 'linens', :type => 'checkbox', :name => 'linens'} 
+            %input{:id => 'linens', :type => 'checkbox', :name => 'request_service[linens]'} 
             %span Linens
           %div
-            %input{:id => 'other', :type => 'checkbox', :name => 'other'} 
+            %input{:id => 'other', :type => 'checkbox', :name => 'request_service[other]'} 
             %span Other
         %div
-          %input{:id => 'who_is_current_supplier', :type => 'text', :name => 'who_is_current_supplier', :placeholder => 'Who is your current supplier:'}
+          %input{:id => 'who_is_current_supplier', :type => 'text', :name => 'request_service[who_is_current_supplier]', :placeholder => 'Who is your current supplier:'}
         %div
-          %input{:id => 'when_does_contract_expire', :type => 'text', :name => 'when_does_contract_expire', :placeholder => 'When does your contract expire:'}
+          %input{:id => 'when_does_contract_expire', :type => 'text', :name => 'request_service[when_does_contract_expire]', :placeholder => 'When does your contract expire:'}
         %div
-          %textarea{:id => 'improvements', :name => 'improvements', :placeholder => 'Are there any improvements you would like in your rental aggreement:', :cols => 51, :rows => 5}
+          %textarea{:id => 'improvements', :name => 'request_service[improvements]', :placeholder => 'Are there any improvements you would like in your rental aggreement:', :cols => 51, :rows => 5}
         %div
-          %textarea{:id => 'primary', :name => 'primary', :placeholder => 'What is your company’s primarty product/service:', :cols => 51, :rows => 5}
+          %textarea{:id => 'primary', :name => 'request_service[primary]', :placeholder => 'What is your company’s primary product/service:', :cols => 51, :rows => 5}
         %div
-          %textarea{:id => 'comments', :name => 'comments', :placeholder => 'Comments:', :cols => 51, :rows => 5}
+          %textarea{:id => 'comments', :name => 'request_service[comments]', :placeholder => 'Comments:', :cols => 51, :rows => 5}
         %ul
           %li
-            %input{:id => 'reset', :type => 'reset', :name => 'reset', :value => 'RESET'}
+            %input{:id => 'reset', :type => 'reset', :name => 'request_service[reset]', :value => 'RESET'}
           %li
-            %input{:id => 'submit', :type => 'submit', :name => 'submit', :value => 'SUBMIT'}
+            %input{:id => 'submit', :type => 'submit', :name => 'request_service[submit]', :value => 'SUBMIT'}
         .clear
   %div{:id => 'contact_us_right'}
     %img{:id => 'map', :src => '/images/contact_us/map.png'}

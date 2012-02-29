@@ -1,0 +1,37 @@
+Request For Service
+
+<%= @params[:date] %>
+<%= @params[:name] %>
+<%= @params[:business] %>
+<%= @params[:address] %>
+<%= @params[:city_state_zip] %>
+<%= @params[:phone] %>
+<%= @params[:email] %>
+
+Do You Use:
+  - Garments: <%= @params[:garments] == 'on' ? 'yes' : 'no' %>
+  - Entrance Rugs: <%= @params[:entrance_rugs] == 'on' ? 'yes' : 'no' %>
+  - Dust Mops: <%= @params[:dust_mops] == 'on' ? 'yes' : 'no' %>
+  - Towels: <%= @params[:towels] == 'on' ? 'yes' : 'no' %>
+  - Linens: <%= @params[:linens] == 'on' ? 'yes' : 'no' %>
+  - Other: <%= @params[:other] == 'on' ? 'yes' : 'no' %>
+
+Who is your current supplier:
+
+<%= @params[:who_is_current_supplier] %>
+
+When does your contract expire:
+
+<%= @params[:when_does_contract_expire] %>
+
+Are there any improvements you would like in your rental aggreement:
+
+<%= @params[:improvements] %>
+
+What is your company’s primary product/service:
+
+<%= @params[:primary] %>
+
+Comments:
+
+<%= @params[:comments] %>

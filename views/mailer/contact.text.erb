@@ -1,0 +1,22 @@
+Contact
+
+<%= @params[:date] %>
+<%= @params[:name] %>
+<%= @params[:business] %>
+<%= @params[:address] %>
+<%= @params[:city_state_zip] %>
+<%= @params[:phone] %>
+<%= @params[:email] %>
+
+Request For Action:
+
+  - Worn: <%= @params[:worn] == 'on' ? 'yes' : 'no' %>
+  - Missing: <%= @params[:missing] == 'on' ? 'yes' : 'no' %>
+  - More Inventory: <%= @params[:more_inventory] == 'on' ? 'yes' : 'no' %>
+  - Less Inventory: <%= @params[:less_inventory] == 'on' ? 'yes' : 'no' %>
+  - Other: <%= @params[:other] == 'on' ? 'yes' : 'no' %>
+  - See Me: <%= @params[:see_me] == 'on' ? 'yes' : 'no' %>
+
+Comments:
+
+<%= @params[:comments] %>

@@ -1,0 +1,19 @@
+<h1>Contact</h1>
+<p><%= @params[:date] %></p>
+<p><%= @params[:name] %></p>
+<p><%= @params[:business] %></p>
+<p><%= @params[:address] %></p>
+<p><%= @params[:city_state_zip] %></p>
+<p><%= @params[:phone] %></p>
+<p><%= @params[:email] %></p>
+<h2>Request For Action:</h2>
+<ul>
+  <li>Worn: <%= @params[:worn] == 'on' ? 'yes' : 'no' %></li>
+  <li>Missing: <%= @params[:missing] == 'on' ? 'yes' : 'no' %></li>
+  <li>More Inventory: <%= @params[:more_inventory] == 'on' ? 'yes' : 'no' %></li>
+  <li>Less Inventory: <%= @params[:less_inventory] == 'on' ? 'yes' : 'no' %></li>
+  <li>Other: <%= @params[:other] == 'on' ? 'yes' : 'no' %></li>
+  <li>See Me: <%= @params[:see_me] == 'on' ? 'yes' : 'no' %></li>
+</ul>
+<h2>Comments:</h2>
+<p><%= @params[:comments] %></p>

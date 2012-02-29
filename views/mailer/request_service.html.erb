@@ -1,0 +1,27 @@
+<h1>Request For Service</h1>
+<p><%= @params[:date] %></p>
+<p><%= @params[:name] %></p>
+<p><%= @params[:business] %></p>
+<p><%= @params[:address] %></p>
+<p><%= @params[:city_state_zip] %></p>
+<p><%= @params[:phone] %></p>
+<p><%= @params[:email] %></p>
+<h2>Do You Use:</h2>
+<ul>
+  <li>Garments: <%= @params[:garments] == 'on' ? 'yes' : 'no' %></li>
+  <li>Entrance Rugs: <%= @params[:entrance_rugs] == 'on' ? 'yes' : 'no' %></li>
+  <li>Dust Mops: <%= @params[:dust_mops] == 'on' ? 'yes' : 'no' %></li>
+  <li>Towels: <%= @params[:towels] == 'on' ? 'yes' : 'no' %></li>
+  <li>Linens: <%= @params[:linens] == 'on' ? 'yes' : 'no' %></li>
+  <li>Other: <%= @params[:other] == 'on' ? 'yes' : 'no' %></li>
+</ul>
+<h2>Who is your current supplier:</h2>
+<p><%= @params[:who_is_current_supplier] %></p>
+<h2>When does your contract expire:</h2>
+<p><%= @params[:when_does_contract_expire] %></p>
+<h2>Are there any improvements you would like in your rental aggreement:</h2>
+<p><%= @params[:improvements] %></p>
+<h2>What is your company’s primarty product/service:</h2>
+<p><%= @params[:primary] %></p>
+<h2>Comments:</h2>
+<p><%= @params[:comments] %></p>

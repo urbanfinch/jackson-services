@@ -10,46 +10,46 @@
         complete this form to prompt action.
       %form{:id => 'contact', :action => '/contact_us/contact', :method => 'post'}
         %div
-          %input{:id => 'date', :type => 'text', :name => 'contact[date]', :placeholder => 'Date:'}
+          %input{:id => 'contact_date', :type => 'text', :name => 'contact[date]', :placeholder => 'Date:'}
         %div
-          %input{:id => 'name', :type => 'text', :name => 'contact[name]', :placeholder => 'Name:'}
+          %input{:id => 'contact_name', :type => 'text', :name => 'contact[name]', :placeholder => 'Name:'}
         %div
-          %input{:id => 'business', :type => 'text', :name => 'contact[business]', :placeholder => 'Business:'}
+          %input{:id => 'contact_business', :type => 'text', :name => 'contact[business]', :placeholder => 'Business:'}
         %div
-          %input{:id => 'address', :type => 'text', :name => 'contact[address]', :placeholder => 'Address:'}
+          %input{:id => 'contact_address', :type => 'text', :name => 'contact[address]', :placeholder => 'Address:'}
         %div
-          %input{:id => 'city_state_zip', :type => 'text', :name => 'contact[city_state_zip]', :placeholder => 'City, State, Zip:'}
+          %input{:id => 'contact_city_state_zip', :type => 'text', :name => 'contact[city_state_zip]', :placeholder => 'City, State, Zip:'}
         %div
-          %input{:id => 'phone', :type => 'text', :name => 'contact[phone]', :placeholder => 'Phone:'}
+          %input{:id => 'contact_phone', :type => 'text', :name => 'contact[phone]', :placeholder => 'Phone:'}
         %div
-          %input{:id => 'email', :type => 'text', :name => 'contact[email]', :placeholder => 'Email:'}
+          %input{:id => 'contact_email', :type => 'text', :name => 'contact[email]', :placeholder => 'Email:'}
         %div
           %h2 Request For Action:
           %div
-            %input{:id => 'worn', :type => 'checkbox', :name => 'contact[worn]'} 
+            %input{:id => 'contact_worn', :type => 'checkbox', :name => 'contact[worn]'} 
             %span Some of my garments are worn.
           %div
-            %input{:id => 'missing', :type => 'checkbox', :name => 'contact[missing]'} 
+            %input{:id => 'contact_missing', :type => 'checkbox', :name => 'contact[missing]'} 
             %span Some of my garments are missing.
           %div
-            %input{:id => 'more_inventory', :type => 'checkbox', :name => 'contact[more_inventory]'} 
+            %input{:id => 'contact_more_inventory', :type => 'checkbox', :name => 'contact[more_inventory]'} 
             %span I need more inventory.
           %div
-            %input{:id => 'less_inventory', :type => 'checkbox', :name => 'contact[less_inventory]'} 
+            %input{:id => 'contact_less_inventory', :type => 'checkbox', :name => 'contact[less_inventory]'} 
             %span I need less inventory.
           %div
-            %input{:id => 'other', :type => 'checkbox', :name => 'contact[other]'} 
+            %input{:id => 'contact_other', :type => 'checkbox', :name => 'contact[other]'} 
             %span Other (comment below)
           %div
-            %input{:id => 'see_me', :type => 'checkbox', :name => 'contact[see_me]'} 
+            %input{:id => 'contact_see_me', :type => 'checkbox', :name => 'contact[see_me]'} 
             %span Please see me.
         %div
-          %textarea{:id => 'comments', :name => 'contact[comments]', :placeholder => 'Comments:', :cols => 51, :rows => 20}
+          %textarea{:id => 'contact_comments', :name => 'contact[comments]', :placeholder => 'Comments:', :cols => 51, :rows => 20}
         %ul
           %li
-            %input{:id => 'reset', :type => 'reset', :name => 'contact[reset]', :value => 'RESET'}
+            %input{:id => 'contact_reset', :type => 'reset', :name => 'contact[reset]', :value => 'RESET'}
           %li
-            %input{:id => 'submit', :type => 'submit', :name => 'contact[submit]', :value => 'SUBMIT'}
+            %input{:id => 'contact_submit', :type => 'submit', :name => 'contact[submit]', :value => 'SUBMIT'}
         .clear
     %div{:id => 'contact_us_left_request_service'}
       %p
@@ -57,54 +57,54 @@
         rental service, use our request for services form.
       %form{:id => 'request_service', :action => '/contact_us/request_service', :method => 'post'}
         %div
-          %input{:id => 'date', :type => 'text', :name => 'request_service[date]', :placeholder => 'Date:'}
+          %input{:id => 'request_service_date', :type => 'text', :name => 'request_service[date]', :placeholder => 'Date:'}
         %div
-          %input{:id => 'name', :type => 'text', :name => 'request_service[name]', :placeholder => 'Name:'}
+          %input{:id => 'request_service_name', :type => 'text', :name => 'request_service[name]', :placeholder => 'Name:'}
         %div
-          %input{:id => 'business', :type => 'text', :name => 'request_service[business]', :placeholder => 'Business:'}
+          %input{:id => 'request_service_business', :type => 'text', :name => 'request_service[business]', :placeholder => 'Business:'}
         %div
-          %input{:id => 'address', :type => 'text', :name => 'request_service[address]', :placeholder => 'Address:'}
+          %input{:id => 'request_service_address', :type => 'text', :name => 'request_service[address]', :placeholder => 'Address:'}
         %div
-          %input{:id => 'city_state_zip', :type => 'text', :name => 'request_service[city_state_zip]', :placeholder => 'City, State, Zip:'}
+          %input{:id => 'request_service_city_state_zip', :type => 'text', :name => 'request_service[city_state_zip]', :placeholder => 'City, State, Zip:'}
         %div
-          %input{:id => 'phone', :type => 'text', :name => 'request_service[phone]', :placeholder => 'Phone:'}
+          %input{:id => 'request_service_phone', :type => 'text', :name => 'request_service[phone]', :placeholder => 'Phone:'}
         %div
-          %input{:id => 'email', :type => 'text', :name => 'request_service[email]', :placeholder => 'Email:'}
+          %input{:id => 'request_service_email', :type => 'text', :name => 'request_service[email]', :placeholder => 'Email:'}
         %div
           %h2 Do You Use:
           %div
-            %input{:id => 'garments', :type => 'checkbox', :name => 'request_service[garments]'} 
+            %input{:id => 'request_service_garments', :type => 'checkbox', :name => 'request_service[garments]'} 
             %span Garments
           %div
-            %input{:id => 'entrance_rugs', :type => 'checkbox', :name => 'request_service[entrance_rugs]'} 
+            %input{:id => 'request_service_entrance_rugs', :type => 'checkbox', :name => 'request_service[entrance_rugs]'} 
             %span Entrance Rugs
           %div
-            %input{:id => 'dust_mops', :type => 'checkbox', :name => 'request_service[dust_mops]'} 
+            %input{:id => 'request_service_dust_mops', :type => 'checkbox', :name => 'request_service[dust_mops]'} 
             %span Dust Mops
           %div
-            %input{:id => 'towels', :type => 'checkbox', :name => 'request_service[towels]'} 
+            %input{:id => 'request_service_towels', :type => 'checkbox', :name => 'request_service[towels]'} 
             %span Towels
           %div
-            %input{:id => 'linens', :type => 'checkbox', :name => 'request_service[linens]'} 
+            %input{:id => 'request_service_linens', :type => 'checkbox', :name => 'request_service[linens]'} 
             %span Linens
           %div
-            %input{:id => 'other', :type => 'checkbox', :name => 'request_service[other]'} 
+            %input{:id => 'request_service_other', :type => 'checkbox', :name => 'request_service[other]'} 
             %span Other
         %div
-          %input{:id => 'who_is_current_supplier', :type => 'text', :name => 'request_service[who_is_current_supplier]', :placeholder => 'Who is your current supplier:'}
+          %input{:id => 'request_service_who_is_current_supplier', :type => 'text', :name => 'request_service[who_is_current_supplier]', :placeholder => 'Who is your current supplier:'}
         %div
-          %input{:id => 'when_does_contract_expire', :type => 'text', :name => 'request_service[when_does_contract_expire]', :placeholder => 'When does your contract expire:'}
+          %input{:id => 'request_service_when_does_contract_expire', :type => 'text', :name => 'request_service[when_does_contract_expire]', :placeholder => 'When does your contract expire:'}
         %div
-          %textarea{:id => 'improvements', :name => 'request_service[improvements]', :placeholder => 'Are there any improvements you would like in your rental aggreement:', :cols => 51, :rows => 5}
+          %textarea{:id => 'request_service_improvements', :name => 'request_service[improvements]', :placeholder => 'Are there any improvements you would like in your rental aggreement:', :cols => 51, :rows => 5}
         %div
-          %textarea{:id => 'primary', :name => 'request_service[primary]', :placeholder => 'What is your company’s primary product/service:', :cols => 51, :rows => 5}
+          %textarea{:id => 'request_service_primary', :name => 'request_service[primary]', :placeholder => 'What is your company’s primary product/service:', :cols => 51, :rows => 5}
         %div
-          %textarea{:id => 'comments', :name => 'request_service[comments]', :placeholder => 'Comments:', :cols => 51, :rows => 5}
+          %textarea{:id => 'request_service_comments', :name => 'request_service[comments]', :placeholder => 'Comments:', :cols => 51, :rows => 5}
         %ul
           %li
-            %input{:id => 'reset', :type => 'reset', :name => 'request_service[reset]', :value => 'RESET'}
+            %input{:id => 'request_service_reset', :type => 'reset', :name => 'request_service[reset]', :value => 'RESET'}
           %li
-            %input{:id => 'submit', :type => 'submit', :name => 'request_service[submit]', :value => 'SUBMIT'}
+            %input{:id => 'request_service_submit', :type => 'submit', :name => 'request_service[submit]', :value => 'SUBMIT'}
         .clear
   %div{:id => 'contact_us_right'}
     %img{:id => 'map', :src => '/images/contact_us/map.png'}

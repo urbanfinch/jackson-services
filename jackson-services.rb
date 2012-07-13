@@ -29,19 +29,35 @@ class JacksonServices < Sinatra::Base
   end
   
   get '/:section/?' do
-    haml "#{params[:section]}/#{params[:section]}".to_sym
+    begin
+      haml "#{params[:section]}/#{params[:section]}".to_sym
+    rescue
+      pass
+    end
   end
   
   get '/:section/:page/?' do
-    haml "#{params[:section]}/#{params[:page]}/#{params[:page]}".to_sym
+    begin
+      haml "#{params[:section]}/#{params[:page]}/#{params[:page]}".to_sym
+    rescue
+      pass
+    end
   end
   
   get '/:section/:page/:subpage/?' do
-    haml "#{params[:section]}/#{params[:page]}/#{params[:subpage]}/#{params[:subpage]}".to_sym
+    begin
+      haml "#{params[:section]}/#{params[:page]}/#{params[:subpage]}/#{params[:subpage]}".to_sym
+    rescue
+      pass
+    end
   end
   
   get '/:section/:page/:subpage/:division/?' do
-    haml "#{params[:section]}/#{params[:page]}/#{params[:subpage]}/#{params[:division]}/#{params[:division]}".to_sym
+    begin
+      haml "#{params[:section]}/#{params[:page]}/#{params[:subpage]}/#{params[:division]}/#{params[:division]}".to_sym
+    rescue
+      pass
+    end
   end
   
   post '/contact_us/contact' do
@@ -55,6 +71,10 @@ class JacksonServices < Sinatra::Base
   end
   
   get '/*' do
+    redirect '/'
+  end
+  
+  not_found do
     redirect '/'
   end
 end

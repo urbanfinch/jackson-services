@@ -2,3 +2,4 @@
 .bundle
 .sass-cache
 tmp/emails
+.env

@@ -1,9 +1,11 @@
 source 'https://rubygems.org'
+ruby '2.1.3'
 
 gem 'sinatra'
 gem 'haml'
 gem 'actionmailer', :require => 'action_mailer'
 gem 'json'
+gem 'unicorn'
 
 group :development do
   gem 'heroku'

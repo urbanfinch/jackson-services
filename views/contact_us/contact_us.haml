@@ -109,7 +109,7 @@
         .clear
     %div{:id => 'contact_us_left_make_a_payment'}
       %p
-        Make a payment to Jackson Services
+        Make a payment to Jackson Services:
       %form{:id => 'make_a_payment', :action => 'https://www.eprocessingnetwork.com/cgi-bin/wo/order.pl', :method => 'post'}
         %div
           %input{:name => 'ItemQty', :type => 'hidden', :value => '1'}
@@ -125,7 +125,7 @@
           %li
             %input{:id => 'make_a_payment_reset', :type => 'reset', :name => 'make_a_payment[reset]', :value => 'RESET', :title => 'Reset'}
           %li
-            %input{:id => 'make_a_payment_submit', :type => 'submit', :name => 'make_a_payment[submit]', :value => 'SUBMIT', :title => 'Submit'}
+            %input{:id => 'make_a_payment_submit', :type => 'submit', :name => 'make_a_payment[submit]', :value => 'CONTINUE', :title => 'Continue'}
         .clear
   %div{:id => 'contact_us_right'}
     %img{:id => 'map', :src => '/images/contact_us/map.png'}

@@ -3,6 +3,19 @@ var jackson_services = {
 
     jackson_services.addPlaceholders();
 
+    var hash = window.location.hash.substring(1);
+    if (hash == "make_a_payment") {
+      $('a#contact_us_form_nav_contact').removeClass('selected');
+      $('a#contact_us_form_nav_request_service').removeClass('selected');
+      $('a#contact_us_form_nav_make_a_payment').addClass('selected');
+      $('div#contact_us_left_contact').hide();
+      $('div#contact_us_left_request_service').hide();
+      $('div#contact_us_left_make_a_payment').show();
+      setTimeout(function() {
+        window.scrollTo(0, 0);
+      }, 1);
+    }
+
     $('nav#contact_us_form_nav a#contact_us_form_nav_contact').click(function(event) {
       $('a#contact_us_form_nav_request_service').removeClass('selected');
       $('a#contact_us_form_nav_make_a_payment').removeClass('selected');

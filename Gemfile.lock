@@ -60,7 +60,7 @@ GEM
     rest-client (1.6.7)
       mime-types (>= 1.16)
     rubyzip (0.9.6.1)
-    sass (3.1.15)
+    sass (3.1.21)
     shotgun (0.9)
       rack (>= 1.0)
     sinatra (1.3.2)
@@ -90,6 +90,10 @@ DEPENDENCIES
   haml
   heroku
   json
+  sass (~> 3.1.18)
   shotgun
   sinatra
   unicorn
+
+BUNDLED WITH
+   1.10.6

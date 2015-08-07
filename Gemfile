@@ -11,4 +11,5 @@ group :development do
   gem 'heroku'
   gem 'compass'
   gem 'shotgun'
+  gem 'sass', '~> 3.1.18'
 end

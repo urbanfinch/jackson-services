@@ -1,22 +1,36 @@
 div#home
   img#jackson_services
     margin: 20px 0px
-    
+
+  div#home_banner
+    height: 40px
+    width: 100%
+    margin-bottom: 20px
+    background-color: $blue
+    font-family: Arial, sans-serif
+    font-size: 20px
+    line-height: 40px
+    text-align: center
+    color: white
+
+    a
+      color: inherit
+
   div#home_columns
     div#home_columns_welcome,
     div#home_columns_history,
     div#home_columns_why_jackson
       float: left
       width: 300px
-      
+
       img
         width: 300px
         margin-bottom: 10px
-        
+
       p
         font-size: 12px
         height: 100px
-      
+
       a:last-child
         display: block
         width: 100px
@@ -29,13 +43,13 @@ div#home
         font-family: Arial, sans-serif
         font-weight: bold
         text-decoration: none
-        
+
       a:last-child:hover
         background-color: $white
         color: $black
-      
+
     div#home_columns_welcome
       margin-right: 25px
-    
+
     div#home_columns_why_jackson
       margin-left: 25px

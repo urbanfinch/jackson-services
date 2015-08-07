@@ -5,7 +5,7 @@ namespace :compass do
   task :watch do
     sh("bundle exec compass watch --sass-dir #{Dir.pwd}/stylesheets --css-dir #{Dir.pwd}/public/stylesheets -s compressed")
   end
-  
+
   desc "Compile the stylesheets"
   task :compile do
     sh("bundle exec compass compile --sass-dir #{Dir.pwd}/stylesheets --css-dir #{Dir.pwd}/public/stylesheets -s compressed")
@@ -13,7 +13,7 @@ namespace :compass do
 end
 
 namespace :jackson_services do
-  desc "Start the Cashier console"
+  desc "Start the console"
   task :console do
     sh("irb -r #{Dir.pwd}/bootstrap.rb")
   end
